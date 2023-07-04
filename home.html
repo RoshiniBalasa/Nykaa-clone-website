@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="https://images-static.nykaa.com/nykdesignstudio-images/pub/media/app-icon-nykaa-fashion-web-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-content">
+            <div class="left">
+                <div class="logo">
+                    <img class="mb-4" src="./images/Nykaa_Logo.png" alt="logo" width="92" height="27">
+
+                </div>
+
+                <nav class="nav">
+                    <ul>
+                        <li>Categories</li>
+                        <li>Brands</li>
+                        <li>Luxe</li>
+                        <li>Nykaa Fashion</li>
+                        <li>Beauty advise</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right">
+                <div class="inputSearch">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search on Nykaa" />
+                </div>
+
+                <div class="accountLink">
+                    <div class="subNavigation">
+                        <ul>
+                            <li>
+                                <span><i class="fa-regular fa-user"></i></span>
+                                <div class="sub-navigatin-nav">
+                                    <div class="sub-navigatin-nav">
+                                        <div class="col">
+                                            <a href="#">Profile</a>
+                                            <a href="#">My Orders</a>
+                                            <a href="#">Bag</a>
+                                            <a href="#">Wishlist</a>
+                                            <a href="./index.html">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="accountLink">
+                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                </div>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+                    <a href="#">My Bag</a>
+                    <p>Look's like your Bag is empty!!</p>
+                </div>
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+
+        </div>
+
+        <div class="subNavigation">
+            <ul>
+                <li>
+                    <span>Makeup</span>
+                    <i class="fa-solid fa-angle-down"></i>
+
+                    <div class="sub-navigatin-nav">
+                        <div class="sub-navigatin-nav">
+                            <div class="col">
+                                <a href="#">Face</a>
+                                <a href="#">Face Primer</a>
+                                <a href="#">Concealer</a>
+                                <a href="#">Foundation</a>
+                                <a href="#">Compact</a>
+                                <a href="#">Contour</a>
+                                <a href="#">Blush</a>
+                                <a href="#">Bronzer</a>
+                                <a href="#">Highlighters</a>
+                                <a href="#">Setting Spray</a>
+                                <a href="#">Makeup Remover</a>
+                            </div>
+                            <div class="col">
+                                <a href="#">Eyes</a>
+                                <a href="#">Kajal</a>
+                                <a href="#">Eyeliner</a>
+                                <a href="#">Mascara</a>
+                                <a href="#">Eye Shadow</a>
+                                <a href="#">Under Eye Concealer</a>
+                                <a href="#">Contact Lenses</a>
+                            </div>
+                            <div class="col">
+                                <a href="#">Lips</a>
+                                <a href="#">Lipstick</a>
+                                <a href="#">Liquid Lipstick</a>
+                                <a href="#">Lip Gloss</a>
+                                <a href="#">Lip Liner</a>
+                                <a href="#">Lip Balm</a>
+                                <a href="#">Lip Stain</a>
+                            </div>
+                            <div class="col">
+                                <a href="#">Nails</a>
+                                <a href="#">Nail Polish</a>
+                                <a href="#">Nail Art Kits</a>
+                                <a href="#">Nail Care</a>
+                                <a href="#">Nail Polish Remover</a>
+                            </div>
+                        </div>
+                </li>
+
+                <li>
+                    <span>Skin</span>
+                    <i class="fa-solid fa-angle-down"></i>
+
+                    <div class="sub-navigatin-nav">
+                        <div class="col">
+                            <a href="#">Moistrizer</a>
+                            <a href="#">Face Moistrizer</a>
+                            <a href="#">Day Cream</a>
+                            <a href="#">Night Cream</a>
+                            <a href="#">Face Oils</a>
+                            <a href="#">Serums</a>
+                            <a href="#">Essence</a>
+                        </div>
+                        <div class="col">
+                            <a href="#">Cleansers</a>
+                            <a href="#">Face Wash</a>
+                            <a href="#">Cleanser</a>
+                            <a href="#">Micellar Water</a>
+                            <a href="#">Face wipes</a>
+                            <a href="#">Scrubs</a>
+                            <a href="#">Exfoliators</a>
+                        </div>
+                        <div class="col">
+                            <a href="#">Masks</a>
+                            <a href="#">Sheet Masks</a>
+                            <a href="#">Sleeping Masks</a>
+                            <a href="#">Masks and Peels</a>
+                            <a href="#">Face Packs</a>
+                            <a href="#">Face Bleach</a>
+                        </div>
+                        <div class="col">
+                            <a href="#">Toners</a>
+                            <a href="#">Toners and Mists</a>
+                            <a href="#">Rose Water</a>
+                        </div>
+                        <div class="col">
+                            <a href="#">Body Care</a>
+                            <a href="#">Lotions</a>
+                            <a href="#">Body Butter</a>
+                            <a href="#">Massage Oils</a>
+                            <a href="#">Shower Gels</a>
+                            <a href="#">Body Wash</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span>Hair</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="sub-navigatin-nav">
+                        <div class="col">
+                            <a href="#">Hair Care</a>
+                            <a href="#">Shampoo</a>
+                            <a href="#">Dry Shampoo</a>
+                            <a href="#">Conditioner</a>
+                            <a href="#">Hair Oils</a>
+                            <a href="#">Hair Serums</a>
+                            <a href="#">Hair Masks</a>
+                        </div>
+                        <div class="col">
+                            <a href="#">Tools and Accessories</a>
+                            <a href="#">Hair Brushes</a>
+                            <a href="#">Hair Combs</a>
+                            <a href="#">Dryers and Stylers</a>
+                            <a href="#">Straighteners</a>
+                            <a href="#">Rollers and curlers</a>
+                            <a href="#">Hair Extentions</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>Appliances</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                    <span>Bath&Body</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+
+                <li>
+                    <span>Natural</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                    <span>Mommy&Baby</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+
+                <li>
+                    <span>Health&Wellness</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                    <span>Men</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+
+                <li>
+                    <span>Fragrance</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+
+
+                <li>
+                    <span>Popups</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+
+
+                <li>
+                    <span>Offers</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+
+            </ul>
+
+        </div>
+    </header>
+    <div class="categorySection">
+        <img src="https://images-static.nykaa.com/uploads/2e6b03e1-7bda-407c-a3d5-29e627e63dac.png?tr=w-2400,cm-pad_resize"
+            widht="1000" height="300">
+
+    </div>
+    <div class="categorySection">
+        <img src="https://images-static.nykaa.com/uploads/1afdb379-d46c-4f43-92f9-ab2e83cef59f.jpg?tr=w-2400,cm-pad_resize"
+            width="1200" height="100">
+
+    </div>
+    <section class="slideCategory bgpink">
+        <div class="btn_container">
+            <button class="btn-container-prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="btn-container-next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="slideCategory-Image" id="imageSlideContainer">
+            <a href="#">
+                <img src="https://images-static.nykaa.com/creatives/a674d0a3-7003-451b-9af9-66e532905002/default.jpg?tr=w-1200,cm-pad_resize"
+                    width="450" height="250">
+            </a>
+            <a href="#">
+                <img src="https://images-static.nykaa.com/creatives/2a4b3aad-3596-4abd-9378-1eefe3330f98/default.jpg?tr=w-1200,cm-pad_resize"
+                    width="450" height="250">
+            </a>
+            <a href="#">
+                <img src="https://images-static.nykaa.com/creatives/89198589-8c1e-4a2d-833f-d61463b869e7/default.jpg?tr=w-1200,cm-pad_resize"
+                    width="450" height="250">
+            </a>
+            <a href="#">
+                <img src="https://images-static.nykaa.com/creatives/77493aa1-e863-49b6-8745-82360d41f5f0/default.jpg?tr=w-1200,cm-pad_resize"
+                    width="450" height="250">
+            </a>
+            <a href="#">
+                <img src="https://images-static.nykaa.com/creatives/ae298538-7ace-453e-87ff-3e011736c0bd/default.png?tr=w-1200,cm-pad_resize"
+                    width="450" height="250">
+            </a>
+        </div>
+    </section>
+    </div class="container">
+    <div class="row row-cols-1 row-cols-md-6 g-1">
+        <div class="col">
+            <div class="card">
+                <img src="https://images-static.nykaa.com/creatives/0c64f779-e7f5-47da-8e14-c4a4c654ef26/default.jpg?tr=w-480,cm-pad_resize"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Up to 25% Off</h5>
+                    <p class="card-text">Extra 10% Off on 499</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://images-static.nykaa.com/creatives/8acf222e-5013-4526-82e4-1554d92a03a9/default.png?tr=w-480,cm-pad_resize"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Upto 40% Off</h5>
+                    <p class="card-text">+ Free Nail Paint</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://images-static.nykaa.com/creatives/b82b8dfd-3c41-483b-8b04-607efc2f4056/default.jpg?tr=w-480,cm-pad_resize"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Flat 10% Off</h5>
+                    <p class="card-text">On Entire Range!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://images-static.nykaa.com/creatives/a3f30535-f9c1-46ee-980d-a2deb1e20186/default.jpg?tr=w-480,cm-pad_resize"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Upto 30% Off</h5>
+                    <p class="card-text">Gifts on all orders</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://images-static.nykaa.com/creatives/0afcd4c2-1ce8-46c2-84c9-3056b55c3147/default.jpg?tr=w-480,cm-pad_resize"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Upto 20% Off</h5>
+                    <p class="card-text">On Entire Range</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://images-static.nykaa.com/creatives/c883bf24-37b5-44cc-a19f-fae489a6bdd4/default.jpg?tr=w-480,cm-pad_resize"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mini on ₹2000!</h5>
+                    <p class="card-text">Amazing Toner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="note">
+        <img src="https://images-static.nykaa.com/uploads/49e43a50-37b5-405a-be2d-ab90055115ec.jpg?tr=w-2400,cm-pad_resize"
+            widht="150" height="90">
+    </div>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Help</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Frequently asked
+                                Questions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Store Locator</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cancellation and
+                                Return</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shipping &
+                                Delivery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Top Categories</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Makeup</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Skin</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hair</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Bath&Body</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Mom&Baby</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Get special discount on your Inbox</h5>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                                fdprocessedid="goido">
+                            <button class="btn" type="button" fdprocessedid="gvqw69">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-end py-4 my-4 border-top">
+                <div class="css-x4l36m">
+                    <div class="css-lmt24f">show us some love ❤ on social media</div>
+                    <ul class="css-1i496c0 d-flex flex-column flex-sm-row justify-content-center py-2 my-2">
+                        <li class="css-r44k6v" style="display: flex; ">
+                            <a href="https://www.instagram.com/mynykaa/?ref=badge" target="_blank"
+                                rel="noopener noreferrer" class="css-1sktyga">
+                                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg"
+                                    alt="Instagram"></a>
+                        </li>
+                        <li class="css-r44k6v" style="display: flex; "><a href="https://www.facebook.com/MyNykaa"
+                                target="_blank" rel="noopener noreferrer" class="css-1sktyga">
+                                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg"
+                                    alt="Facebook"></a>
+                        </li>
+                        <li class="css-r44k6v" style="display: flex;"><a
+                                href="https://www.youtube.com/channel/UCoaH2UtB1PsV7av17woV1BA" target="_blank"
+                                rel="noopener noreferrer" class="css-1sktyga">
+                                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg"
+                                    alt="Youtube"></a></li>
+                        <li class="css-r44k6v" style="display: flex;">
+                            <a href="https://twitter.com/MyNykaa" target="_blank" rel="noopener noreferrer"
+                                class="css-1sktyga"><img
+                                    src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg"
+                                    alt="Twitter"></a>
+                        </li>
+                        <li class="css-r44k6v" style="display: flex;"><a href="https://www.pinterest.com/mynykaa/"
+                                target="_blank" rel="noopener noreferrer" class="css-1sktyga"><img
+                                    src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg"
+                                    alt="Pinterest"></a></li>
+                    </ul>
+                </div>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="footer-padding">
+        <div class="footer">
+            <div class="container">
+                <footer class="py-2 my-3">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="https://www.nykaa.com/policy#terms-conditions"
+                                class="nav-link_f px-2 ">Terms and conditions</a></li>
+                        <li class="nav-item"><a href="https://www.nykaa.com/policy#shipping-policy"
+                                class="nav-link_f px-2">Shipping policy</a></li>
+                        <li class="nav-item"><a href="https://www.nykaa.com/policy#shipping-policy"
+                                class="nav-link_f px-2">cancellation policy</a></li>
+                        <li class="nav-item"><a href="https://www.nykaa.com/policy#shipping-policy"
+                                class="nav-link_f px-2">Privacy policy</a></li>
+                    </ul>
+                    <p class="text-center">©2023 Roshini Balasa</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
